@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="headerBlue">#3B82F6</color> <!-- adjust -->
+    <color name="buttonBlue">#1F51CE</color>
+    <color name="iconBg">#F0F7FF</color>
+    <color name="accentBlue">#2B8AF7</color>
+    <color name="grey">#3E3E3E</color>
+    <color name="purple">#D1B4FF</color>
+    <color name="cream">#FFC8AA</color>
+    <color name="skyBlue">#ABF7FF</color>
+    <color name="green">#67FFC4</color>
+    <color name="pink">#FF6FA6</color>
+    <color name="LightBlue">#81D3FF</color>
+    <color name="cream2">#FFD49B</color>
+    <color name="yellow">#FCDC75</color>
+
+
+</resources>

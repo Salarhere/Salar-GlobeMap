@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/standardCoordinatorLayout"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <com.mapbox.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="16dp"
+        android:gravity="center_vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="7dp"
+            android:layout_margin="5dp"
+            android:backgroundTint="@android:color/white"
+            app:strokeWidth="0dp"
+            app:cardElevation="4dp"
+            android:layout_gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/searchEditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Search Location"
+                android:background="@android:color/transparent"
+                android:paddingHorizontal="16dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:imeOptions="actionSearch"
+                android:singleLine="true" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <Space
+            android:layout_width="6dp"
+            android:layout_height="match_parent" />
+
+        <ImageButton
+            android:id="@+id/searchButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/round_background_icons"
+            android:src="@drawable/search_ic"
+            android:contentDescription="Search"
+            android:scaleType="centerInside"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/suggestionsRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_below="@id/searchEditText"
+        android:background="@android:color/white"
+        android:visibility="gone"
+        android:elevation="8dp"
+        android:overScrollMode="never"
+        android:nestedScrollingEnabled="true"
+        android:layout_marginTop="75dp"/>
+
+    <ImageButton
+        android:id="@+id/layersButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/floating_button_bg"
+        android:src="@drawable/layer_icon"
+        android:scaleType="centerInside"
+        android:padding="12dp" />
+
+    <ImageButton
+        android:id="@+id/targetButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="200dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/floating_button_bg"
+        android:src="@drawable/target_icon"
+        android:scaleType="centerInside"
+        android:padding="12dp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
