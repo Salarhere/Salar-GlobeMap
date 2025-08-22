@@ -46,6 +46,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var mapboxMap: MapboxMap
     private lateinit var runningAnimation: Cancelable
 
+    //hello
+
 
     private fun spinGlobe() {
         val zoom = mapboxMap.cameraState.zoom
