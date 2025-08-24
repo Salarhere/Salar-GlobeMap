@@ -10,7 +10,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/main_content"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        >
 
         <FrameLayout
             android:id="@+id/map_container"
@@ -49,27 +50,22 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/search_container"
+        <EditText
+            android:id="@+id/searchEditText"
             android:layout_width="0dp"
-            android:layout_height="56dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginTop="72dp"
-            app:cardCornerRadius="28dp"
-            app:cardElevation="6dp"
+            android:layout_height="42dp"
             android:visibility="gone"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent">
-
-            <androidx.appcompat.widget.SearchView
-                android:id="@+id/search_view"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:iconifiedByDefault="false"
-                android:queryHint="Search a place ..." />
-        </com.google.android.material.card.MaterialCardView>
+            android:hint="Search..."
+            android:singleLine="true"
+            android:paddingStart="16dp"
+            android:paddingEnd="12dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/searchview_bg"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            app:layout_constraintStart_toEndOf="@+id/btn_drawer"
+            app:layout_constraintEnd_toStartOf="@+id/btn_search"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageButton
             android:id="@+id/btn_layer"
