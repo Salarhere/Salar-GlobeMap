@@ -2,4 +2,8 @@
     <string name="app_name">Globe Map</string>
     <string name="nav_open">Open</string>
     <string name="nav_close">Close</string>
+    <string name="content_weather_icon">Weather icon</string>
+    <string name="content_calendar">Calendar</string>
+    <string name="content_metric_icon">Metric icon</string>
+    <string name="content_weather_illustration">Weather illustration</string>
 </resources>

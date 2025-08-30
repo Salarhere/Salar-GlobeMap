@@ -33,7 +33,6 @@ class MapTypeAdaptor(
         val imageItem = imageList[position]
         holder.imageView.setImageResource(imageItem.imageResId)
 
-        // Show stroke + check icon only for selected item
         if (position == selectedPosition) {
             holder.imageView.setBackgroundResource(R.drawable.selected_stroke)
             holder.checkIcon.visibility = View.VISIBLE
@@ -47,7 +46,7 @@ class MapTypeAdaptor(
             selectedPosition = position
             notifyItemChanged(oldPosition)
             notifyItemChanged(selectedPosition)
-            onItemSelected(position) // pass back selected map type
+            onItemSelected(position)
         }
     }
 

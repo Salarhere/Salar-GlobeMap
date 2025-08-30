@@ -109,10 +109,10 @@ class MainActivity : AppCompatActivity() {
         val featureList = listOf(
             FeatureItem(R.drawable.globe_ic, "Earth Map", resources.getColor(R.color.purple)),
             FeatureItem(R.drawable.arrow_ic, "GPS Navigation", resources.getColor(R.color.cream)),
-            FeatureItem(R.drawable.location_share, "Location Sharing", resources.getColor(R.color.skyBlue)),
+            FeatureItem(R.drawable.weather_ic, "Weather Forecast", resources.getColor(R.color.skyBlue)),
             FeatureItem(R.drawable.camera_ic, "Live Web Camera", resources.getColor(R.color.green)),
             FeatureItem(R.drawable.traffic_ic, "Traffic Alert", resources.getColor(R.color.pink)),
-            FeatureItem(R.drawable.locations_ic, "Famous Places", resources.getColor(R.color.LightBlue)),
+            FeatureItem(R.drawable.nearby_icon, "Nearby Places", resources.getColor(R.color.LightBlue)),
             FeatureItem(R.drawable.route_ico, "Route Finder", resources.getColor(R.color.cream2)),
             FeatureItem(R.drawable.area_ic, "Area Calculator", resources.getColor(R.color.yellow))
         )
@@ -124,6 +124,8 @@ class MainActivity : AppCompatActivity() {
                 override fun onItemClick(position: Int) {
                     when (position) {
                         0 -> startActivity(Intent(this@MainActivity, StandardView::class.java))
+                        5 -> startActivity(Intent(this@MainActivity, NearbyPlacesActivity::class.java))
+                        2 -> startActivity(Intent(this@MainActivity, WeatherActivity::class.java))
                     }
                 }
             })
